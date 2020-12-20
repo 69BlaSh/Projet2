@@ -1,0 +1,64 @@
+/*Normalize css*/
+html{
+    font-family: Raleway, Arial, Verdana, sans-serif;
+}
+
+/*header*/
+.menu{ 
+    width: 100%;
+    height: 100px;
+    border: 0;
+}
+
+.m-left{/*figure Logo*/
+    float: left;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.m-left img{/*image logo*/
+    width: 150px;
+    height: auto;
+}
+
+.m-right{/*ul navigation*/
+    float:right;
+    list-style-type:none;
+    margin-top: 50px;
+    margin-right: 70px;
+}
+.m-right li{/*li navigation*/
+    display: inline;
+    margin-left: 70px;
+}
+.m-right-li1-li2 {/*a navigation*/
+    color: black;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.m-right-li3 {/*a navigation*/
+    color: #0065FC;
+    font-weight: lighter;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+}
+.m-right-li1-li2:hover {/*a rollover li1 accomodations li2activities*/
+    border-top:3px solid #0065FC;
+    width : 70px;
+    padding-top: 50px;
+    color:#0065FC;
+    width: 100%;
+    } 
+ 
+/*Main*/
+main header{
+    width: 100%;
+    padding-left: 50px;
+    background-color: orange;
+}
