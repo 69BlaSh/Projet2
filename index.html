@@ -5,37 +5,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Reservia</title>
-        
-        <link rel="stylesheet" href="css/style.css">       
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">     
     </head>    
     <body>
         <!--Top-->
-        <header>          
-            <!--Navigation menu-->
-            <nav>
-                <!--Logo Reservia-->
-                <figure>
-                    <img src="images/logo/logoreservia.png" alt="Logo Reservia">
-                </figure> 
-                <ul>
-                    <li><a href="#accomodations"><strong>Hébergements</strong></a></li>
-                    <li><a href="#activities"><strong>Activités</strong></a></li>
-                    <li>S'inscrire</li>
+        <header>                                                   
+            <nav class="menu"><!--Logo Reservia-->
+                <figure class="m-left">
+                    <img src="images/logo/logoreservia.png" class="logo" alt="Logo Reservia" >
+                </figure>            
+                <!--Navigation menu--> 
+                <ul class="m-right">
+                    <li><a href="#accomodations" class="m-right-li1-li2">Hébergements</a></li>
+                    <li><a href="#activities" class="m-right-li1-li2">Activités</a></li>
+                    <li><a href="#" class="m-right-li3">S'inscrire</a></li>
                 </ul>              
             </nav>
         </header>
         <main>                            
             <!--Teaser-->  
-            <header> 
-                <h1>Trouvez votre hébergement pour des <em>vacances</em> de rêves</h1>
-                <p>En plein <em>centre-ville</em> ou en <em>pleine natur</em>e</p>
-            </header>
+            <header class="headermain"> 
+                <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+                <p>En plein scentre-ville ou en pleine nature</p>
+            
                 <!--Internal research-->                        
                 <form role="search">
                     <label for="search">
                         <input type="search" id="search" name="search" placeholder="Marseille, France">
                     </label>
                     <button type="submit">Rechercher</button>
+                </header>
                 </form>                         
                 <!--Filters research-->
                 <section>
