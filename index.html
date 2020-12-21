@@ -30,10 +30,11 @@
         </header>
         <main>                            
             <!--Teaser-->  
-            <header class="headermain"> 
-                <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-                <p class="p-title">En plein centre ville ou en pleine nature</p>
-            
+            <header>
+                <article class="headermain">
+                    <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+                    <p class="p-title">En plein centre ville ou en pleine nature</p>
+                </article> 
                 <!--Internal research-->                        
                 <form class="research" role="search">                    
                     <i class="fas fa-map-marker-alt"></i>                                        
@@ -44,21 +45,13 @@
                 </header>
                 </form>                         
                 <!--Filters research-->
-                <section>
-                    <h2>Filtres</h2> 
-                    <form>               
-                        <label for="economy">Économique                  
-                            <input type="checkbox" id="economy" name="economy">
-                        </label>
-                        <label for="family">Famillial
-                            <input type="checkbox" id="family" name="family">                   
-                        </label>
-                        <label for="romantic">Romantique
-                            <input type="checkbox" id="romantic" name="romantic">
-                        </label>             
-                        <label for="animals">Aminaux autorisés                   
-                            <input type="checkbox" id="animals" name="animals">
-                        </label>    
+                <section class="filtermenu">
+                    <h2 class="fm-title">Filtres</h2> 
+                    <form class="fm-btn-container">
+                        <button class="fm-btn1">Économique</button>
+                        <button class="fm-btn2">Famillial</button>
+                        <button class="fm-btn3">Romantique</button>
+                        <button class="fm-btn4">Aminaux autorisés</button>                
                     </form>
                 </section>
             <!--Informations-->                          
