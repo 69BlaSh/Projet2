@@ -9,14 +9,16 @@
         <link rel="stylesheet" href="style.css">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">     
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap">
+        <script src="https://kit.fontawesome.com/68797c601d.js" crossorigin="anonymous"></script>    
     </head>    
     <body>
         <!--Top-->
-        <header>                                                   
-            <nav class="menu"><!--Logo Reservia-->
+        <header>
+            <!--Logo Reservia-->                                                   
+            <nav class="menu">
                 <figure class="m-left">
-                    <img src="images/logo/logoreservia.png" class="logo" alt="Logo Reservia" >
+                    <img src="images/logo/logoreservia.png" class="logo" alt="Logo Reservia">
                 </figure>            
                 <!--Navigation menu--> 
                 <ul class="m-right">
@@ -30,14 +32,15 @@
             <!--Teaser-->  
             <header class="headermain"> 
                 <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-                <p>En plein scentre-ville ou en pleine nature</p>
+                <p class="p-title">En plein centre ville ou en pleine nature</p>
             
                 <!--Internal research-->                        
-                <form role="search">
+                <form class="research" role="search">                    
+                    <i class="fas fa-map-marker-alt"></i>                                        
                     <label for="search">
-                        <input type="search" id="search" name="search" placeholder="Marseille, France">
+                        <input class="r-middle" type="search" id="search" name="search" placeholder="Marseille, France">                 
                     </label>
-                    <button type="submit">Rechercher</button>
+                    <button class="r-right" type="submit">Rechercher</button>
                 </header>
                 </form>                         
                 <!--Filters research-->
