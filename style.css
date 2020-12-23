@@ -82,11 +82,12 @@ h1{
 .fa-map-marker-alt{ /*Left Block*/
     position: relative;
     float: left;
-    width: 52px;
+    width: 50px;
     height: 50px;
     font-size: 18px;
     background-color:#F2F2F2;
     border-radius: 20px 0px 0px 20px;
+    line-height: 50px !important;
 }
 .fa-map-marker-alt:before{ /*Left Block Icon*/
     position: absolute;
@@ -122,45 +123,119 @@ h1{
 
 /*Filters Menu*/
 .filtermenu{/*Container*/
-    display:block;
     margin-left: 150px;
     width: 970px;
     height: 50px;
     margin-top: 30px;
+    background-color:red;
+    vertical-align: center;    
 }
 .fm-title{ /*Title Filters*/
     display: inline-block;
     vertical-align: middle;
     font-size: 20px;
     width: 70px;
-}
+}   
 .fm-btn-container{ /*Buttons Menu*/
+    position: absolute;
     display: inline-block;
-    vertical-align: middle
+    background-color: blue;
 }
-.fm-btn1{
+
+.fm-btn1{ /*Button Economy*/
+    display:inline-block;
     margin-left:23px;
     margin-right:23px;
     width: 195px;
     height: 50px;
-    border-radius: 20px 20px 20px 20px;
-    border: none;
-    outline-style: none;
     font-size: 18px;
-    border: 3px solid #F2F2F2;
-    background-color:white;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 3px solid orange;
+    background-color:rgb(161, 22, 22);
 }
-.fm-btn2{
+.fa-money-bill-wave{ /*Block Icon Economy*/
+    position: absolute;
+    left: 2.5%;
+    top:0px;
+    bottom: 0px;
+    float:left;
+    font-size: 18px;
+    background-color:grey;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;    
+    line-height: 50px !important;
+
+}
+.fm-btn2{ /*Button Family*/
+    display: inline-block;
     margin-right:23px;
     width: 152px;
-    height:50px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 3px solid orange;
+    background-color:rgb(161, 22, 22);
 }
-.fm-btn3{
+.fa-child{/*Block Icon Family*/
+    position: absolute;
+    left:27.5%;
+    top:0px;
+    bottom: 0px;
+    float:left;
+    font-size: 18px;
+    background-color:grey;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px !important;
+}
+.fm-btn3{ /*Button Romantic*/
+    display: inline-block;
     margin-right:23px;
     width: 184px;
     height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 3px solid orange;
+    background-color:rgb(161, 22, 22);
 }
-.fm-btn4{
+.fa-heart{/*Block Icon Romantic*/
+    position: absolute;
+    left:48%;
+    top:0px;
+    bottom: 0px;
+    float:left;
+    font-size: 18px;
+    background-color:grey;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px !important;
+}
+.fm-btn4{ /*Button Animals Allowds*/
+    display: inline-block;
     width: 242px;
     height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 3px solid orange;
+    background-color:rgb(161, 22, 22);
+}
+.fa-dog{ /*Block Icon Economy*/
+    position: absolute;
+    left: 72%;
+    top:0px;
+    bottom: 0px;
+    float:left;
+    font-size: 18px;
+    background-color:grey;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;    
+    line-height: 50px !important;
 }
