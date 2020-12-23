@@ -9,16 +9,14 @@
         <link rel="stylesheet" href="style.css">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap">
-        <script src="https://kit.fontawesome.com/68797c601d.js" crossorigin="anonymous"></script>    
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">     
     </head>    
     <body>
         <!--Top-->
-        <header>
-            <!--Logo Reservia-->                                                   
-            <nav class="menu">
+        <header>                                                   
+            <nav class="menu"><!--Logo Reservia-->
                 <figure class="m-left">
-                    <img src="images/logo/logoreservia.png" class="logo" alt="Logo Reservia">
+                    <img src="images/logo/logoreservia.png" class="logo" alt="Logo Reservia" >
                 </figure>            
                 <!--Navigation menu--> 
                 <ul class="m-right">
@@ -30,28 +28,35 @@
         </header>
         <main>                            
             <!--Teaser-->  
-            <header>
-                <article class="headermain">
-                    <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-                    <p class="p-title">En plein centre ville ou en pleine nature</p>
-                </article> 
+            <header class="headermain"> 
+                <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+                <p>En plein scentre-ville ou en pleine nature</p>
+            
                 <!--Internal research-->                        
                 <form class="research" role="search">                    
                     <i class="fas fa-map-marker-alt"></i>                                        
                     <label for="search">
                         <input class="r-middle" type="search" id="search" name="search" placeholder="Marseille, France">                 
                     </label>
-                    <button class="r-right" type="submit">Rechercher</button>
+                    <button type="submit">Rechercher</button>
                 </header>
                 </form>                         
                 <!--Filters research-->
-                <section class="filtermenu">
-                    <h2 class="fm-title">Filtres</h2> 
-                    <form class="fm-btn-container">
-                        <button class="fm-btn1">Économique</button>
-                        <button class="fm-btn2">Famillial</button>
-                        <button class="fm-btn3">Romantique</button>
-                        <button class="fm-btn4">Aminaux autorisés</button>                
+                <section>
+                    <h2>Filtres</h2> 
+                    <form>               
+                        <label for="economy">Économique                  
+                            <input type="checkbox" id="economy" name="economy">
+                        </label>
+                        <label for="family">Famillial
+                            <input type="checkbox" id="family" name="family">                   
+                        </label>
+                        <label for="romantic">Romantique
+                            <input type="checkbox" id="romantic" name="romantic">
+                        </label>             
+                        <label for="animals">Aminaux autorisés                   
+                            <input type="checkbox" id="animals" name="animals">
+                        </label>    
                     </form>
                 </section>
             <!--Informations-->                          
