@@ -9,7 +9,9 @@
         <link rel="stylesheet" href="style.css">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">     
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/68797c601d.js" crossorigin="anonymous"></script>     
     </head>    
     <body>
         <!--Top-->
@@ -30,7 +32,7 @@
             <!--Teaser-->  
             <header class="headermain"> 
                 <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-                <p>En plein scentre-ville ou en pleine nature</p>
+                <p class="p-title">En plein centre-ville ou en pleine nature</p>
             
                 <!--Internal research-->                        
                 <form class="research" role="search">                    
@@ -38,22 +40,21 @@
                     <label for="search">
                         <input class="r-middle" type="search" id="search" name="search" placeholder="Marseille, France">                 
                     </label>
-                    <button type="submit">Rechercher</button>
+                    <button class="r-right" type="submit">Rechercher</button>
                  </form>
-                </header>
-                                        
+                </header>                                        
                 <!--Filters research-->
                 <section class="filtermenu">
                     <h2 class="fm-title">Filtres</h2> 
                     <form class="fm-btn-container">
-                        <button class="fm-btn1"><i class="fas fa-money-bill-wave"></i>Économique</button>
-                        <button class="fm-btn2"><i class="fas fa-child"></i>Famillial</button>
-                        <button class="fm-btn3"><i class="fas fa-heart"></i>Romantique</button>
-                        <button class="fm-btn4"><i class="fas fa-dog"></i>>Aminaux autorisés</button>                
+                        <button class="fm-btn1"><i class="fas fa-money-bill-wave"></i><span class="fm-btn-p-economy">Économique</span></button>
+                        <button class="fm-btn2"><i class="fas fa-child"></i><span class="fm-btn-p-family"> Famillial</span></button>
+                        <button class="fm-btn3"><i class="fas fa-heart"></i><span class="fm-btn-p-romantic"> Romantique</span></button>
+                        <button class="fm-btn4"><i class="fas fa-dog"></i><span class="fm-btn-p-pets">Aminaux autorisés</span></button>                
                     </form>
                 </section>
             <!--Informations-->                          
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <p class="info-p"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
             <!--Accomodations block-->
             <article>
                 <h2 id="accomodationns">Hébergements à Marseille</h2>
@@ -126,7 +127,7 @@
                     <img src="images/activites/4_small/parc_longchamp.jpg" alt="Parc Longchamp">
                     <figcaption>Parc Longchamp</figcaption>
                 </figure>       
-            </article>
+            </section>
         </main>
         <!--Bottom-->
         <footer>
