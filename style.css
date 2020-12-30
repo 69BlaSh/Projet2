@@ -1,9 +1,10 @@
 /*Normalize css*/
 html{
     font-family: Raleway, Arial, Verdana, sans-serif;
-    overflow-x: hidden
-        
+    overflow-x: hidden;      
 }
+
+
 
 /*header block*/
 .menu{ /*Container*/
@@ -339,15 +340,21 @@ h1{
     width:25px;
     height:25px;
     border:2px solid #F2F2F2;
-    font-size:14px;
+    font-size:12px;
     color: #0065FC;
     text-indent: 10px;
     line-height: 25px !important;
+}
+.info-sp{
+    margin-left:20px;
 }
 
 /*Accommodations Article*/
 .fa-star{
     color: #0065FC;
+}
+.fa-star.grey{
+    color: #F2F2F2;
 }
 
 .photo-title{
@@ -378,6 +385,7 @@ h1{
     justify-content: space-around;
     padding: 0;
 }
+
 .aa-title{ /*Titre */
     position: relative;
     top: 30px;
@@ -619,21 +627,21 @@ h1{
 }
 
 /*Activities*/
-.a-title{
+.a-title{ /*Titre */
     margin-left: 250px;
     font-size: 22px;
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
-.a-photo-title{
+.a-photo-title{ /*Legendes images*/
     font-weight: bold;
     margin-left: 20px;
     position: relative;
     bottom: -15px;
 }
 
-.a-fg{
+.a-fg{ /*figures*/
     display:flex;
     flex-flow:column wrap;
     align-content:space-between;
@@ -644,98 +652,100 @@ h1{
 
 }
 
-.a-fg-vp{
+.a-fg-vp{ /*figure vieux port*/
     width: 300px;
     height: 450px;
-    margin: auto;
+    margin: 0;
     background: white;
     border-radius: 20px;
     box-shadow: 5px 5px 15px #F2F2F2;
 }
 
-.a-img-vp{
+.a-img-vp{ /* image Vieux Port*/
     width: 300px;
     height: 395px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
-.a-fg-fp{
+.a-fg-fp{   /*figure Fort de Pomegues*/
     width: 300px;
     height: 240px;
-    margin: auto;
-    margin-top:0;
+    margin: 0;  
     background: white;
     border-radius: 20px;
     box-shadow:  5px 5px 15px #F2F2F2;
 }
-.a-img-fp{
+
+.a-img-fp{ /* image Fort de Pomegues*/
     width: 300px;
     height: 185px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
-.a-fg-if{
+.a-fg-if{ /*figure îles de Frioul*/
     width: 300px;
     height: 165px;
     background: white;
-    margin-bottom: 0;
+    margin:0px;
     border-radius: 20px;
     box-shadow:  5px 5px 15px #F2F2F2;
+    margin-top: 45px;
 }
 
-.a-img-if{
+.a-img-if{ /*image îles de Frioul*/
     width: 300px;
     height: 110px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
-.a-fg-pnc{
+.a-fg-pnc{ /*figure Parc National des Calanques*/
     width: 300px;
     height: 450px;
-    margin: auto;
+    margin: 0px;
     background: white;
     border-radius: 20px;
     box-shadow:  5px 5px 15px #F2F2F2;
 }
 
-.a-img-pnc{
+.a-img-pnc{ /* figure Parc National des Calanques*/
     width: 300px;
     height: 395px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
-.a-fg-ndg{
+.a-fg-ndg{ /*figure Notre Dame de la Garde*/
     width: 300px;
     height: 195px;;
-    margin: auto;
+    margin: 0;
     margin-top:0;
     background: white;
     border-radius: 20px;
     box-shadow:  5px 5px 15px #F2F2F2;
 }
 
-.a-img-ndg{
+.a-img-ndg{ /*image Notre Dame de la Garde*/
     width: 300px;
     height: 140px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
-.a-fg-pl{
+.a-fg-pl{ /*figure Parc Longchamp*/
     width: 300px;
     height: 210px;
-    margin: auto;
+    margin: 0;
     margin-bottom: 0;
     background: white;
     border-radius: 20px;
     box-shadow:  5px 5px 15px #F2F2F2;
+    margin-top:45px;
 }
 
-.a-img-pl{
+.a-img-pl{ /*image Parc Longchamp*/
     width: 300px;
     height: 155px;
     object-fit: cover;
@@ -743,10 +753,10 @@ h1{
 }
 
 /*Footer*/
-.ft{
+.ft{ /*Footer*/
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:space-around;
     height: 200px;
     left:0px;
     right:0px;
@@ -756,20 +766,19 @@ h1{
     margin-top: 50px;
 }
 
-.s-ap-ul{
+.s-ap-ul{  /*ul A Propos*/
     list-style-type: none;
     padding-left: 0px;
     line-height: 30px;
 }
 
-
-.s-nh-ul{
+.s-nh-ul{ /*ul Nos hébergements*/
     list-style-type: none;
     padding-left: 0px;
     line-height: 30px;
 }
 
-.s-a-ul{
+.s-a-ul{ /*ul Assistance*/
     list-style-type: none;
     padding-left: 0px;
     line-height: 30px;
