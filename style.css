@@ -3,98 +3,93 @@ html{
     font-family: Raleway, Arial, Verdana, sans-serif;
     overflow-x: hidden;      
 }
-
-
-
-/*header block*/
-.menu{ /*Container*/
-    width: 100%;
-    height: 100px;
-    border: 0;
+body{
+    margin:0;
+    padding:0px;
 }
 
-.m-left{/*figure Logo*/
-    float: left;
-    margin-left: 250px;
+
+main, header{
+    margin-left: 13%;
+    margin-right: 13%;
+    max-width: 1440px;
+    margin:auto;
+    padding:5px;
+    width: 100%;
+}
+
+/*header*/
+.banner{
+    width: 100%;
+    height: 100px;
+}
+
+.banner img{
+    width: 110px;
+    height: auto;
     margin-top: 25px;
 }
 
-.m-left img{/*image logo*/
-    width: 110px;
-    height: auto;
-}
-
-.m-right{/*ul navigation*/
+.banner ul{
     float:right;
     list-style-type:none;
     margin-top: 50px;
-    margin-right: 250px;
 }
 
-.m-right li{/*li navigation*/
-    display: inline;
-    margin-left: 70px;
+.banner li{
+    display:inline; 
 }
 
-.m-right-li1-li2 {/*a navigation*/
+.banner .nav1-nav2{
     color: black;
-    position: relative;
+    position:relative;
     text-decoration: none;
-    font-size: 18px;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-.m-right-li3 {/*a navigation*/
+.banner .nav1-nav2:hover{
+    border-top:3px solid #0065FC;
+    padding-top:47px;
+    color:#0065FC;
+
+}
+
+.banner .nav3{
     color: #0065FC;
     font-weight: lighter;
-    position: relative;
-    text-decoration: none;
-    font-size: 18px;
-    padding-left: 20px;
-    padding-right: 20px;
     font-weight: bold;
+    text-decoration: none;
+    margin-left:30px;
 }
 
-.m-right-li1-li2:hover {/*rollover li1 accomodations li2activities*/
-    border-top:3px solid #0065FC;
-    width : 70px;
-    padding-top: 50px;
-    color:#0065FC;
-    width: 100%;
-}
-
-/*Header Main*/
-.headermain{ /*Container*/
-    width: 100%;
-    margin-left: 250px;
-    margin-bottom: 30px;
+/*teaser*/
+.teaser{ 
+    margin-bottom: 45px;
+    line-height:15px;
 }
 
 h1{
     font-size:22px;
-    margin-bottom: 0px;
 }
 
-.p-title{
-    position: relative;
+.teaser p{
     font-size: 16px;
-    margin-top:5px;
-    margin-bottom: 30px;
     font-weight:400;   
 }
 
 /*Internal block research*/
-.research{/*Container*/
-    display:block;
+.searchBar{
+    display: block;
     border: 1px solid #F2F2F2;
     width: 420px;
     height: 50px;
     border-radius: 20px;
-    margin-left: 0px;
+    
 } 
 
-.fa-map-marker-alt{ /*Left Block*/
+.fa-map-marker-alt{
     position: relative;
     float: left;
     width: 50px;
@@ -102,17 +97,17 @@ h1{
     font-size: 18px;
     background-color:#F2F2F2;
     border-radius: 20px 0px 0px 20px;
-    line-height: 50px !important;
+    line-height: 50px !important;   
 }
 
-.fa-map-marker-alt:before{ /*Left Block Icon*/
+.fa-map-marker-alt:before{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.r-middle{/*Middle Block*/
+.searchBar input{
     position: relative;    
     font-size: 18px;
     font-weight: bold;
@@ -122,12 +117,11 @@ h1{
     border: none;
 }
 
-.r-middle::placeholder{ /*Middle Block Text*/
+.searchBar input::placeholder{
     color: black;
-    padding-left: 10px;
 }
 
-.r-right{ /*Right Block*/
+.searchBar button{
     position: relative;
     float: right;
     width: 134px;
@@ -142,32 +136,24 @@ h1{
 }
 
 /*Filters Menu*/
-.filtermenu{/*Container*/
-    margin-left: 250px;
-    width: 970px;
+
+.filters {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    width: 100%;
     height: 50px;
     margin-top: 30px;
-    vertical-align: center;    
 }
 
-.fm-title{ /*Title Filters*/
-    display: inline-block;
-    vertical-align: middle;
+.filters h2{
     font-size: 20px;
-    width: 70px;
+    width: 20px;
     margin-top: 11px;
+    padding-right:20px;
 } 
 
-.fm-btn-container{ /*Buttons Menu*/
-    position: absolute;
-    display: inline-block;
-}
-
-.fm-btn1{ /*Button Economy*/
-    display:inline-block;
-    margin-left:23px;
-    margin-right:23px;
-    width: 195px;
+.filters button{
     height: 50px;
     font-size: 18px;
     font-weight: bold;
@@ -175,164 +161,59 @@ h1{
     border: 3px solid #F2F2F2;
     background-color:white;
     outline-style: none;
+    margin-left:50px;
+    padding:0;
 }
 
-.fm-btn1:hover{/*rollover btn1 Economy*/
-    background-color:  #0065FC;
-    border: 3px solid #0065FC;
-    color: white;
+.btn-economy{
+    width: 190px;
 }
 
-.fm-btn-p-economy{ /*Text Economy*/
-    position: relative;
-    float: left;
-    margin-left:30%;
+.btn-family{
+    width: 155px;   
 }
 
-.fa-money-bill-wave{ /*Block Icon Economy*/
-    position: absolute;
-    left: 2.5%;
-    top:0px;
-    bottom: 0px;
+.btn-romantic{
+    width: 180px;   
+}
+
+.btn-animals{
+    width: 240px;
+}
+
+.filters button span{
+    display: block;
+    padding-top: 10px;
+}
+
+.filters button i{
     float:left;
+    left:-4px;
+    bottom:3px;
+    position: relative;
     font-size: 18px;
     color:#0065FC;
     background-color:#DEEBFF;
     border-radius: 50px;
     height: 50px;
     width: 50px;    
-    line-height: 50px !important;
+    line-height: 50px !important;   
 }
 
-.fm-btn2{ /*Button Family*/
-    display: inline-block;
-    margin-right:23px;
-    width: 152px;
-    height: 50px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 50px;
-    border: 3px solid #F2F2F2;
-    background-color:white;
-    outline-style: none;
-}
-
-.fm-btn2:hover{/*rollover btn2 Family*/
+.filters button:hover{
     background-color:  #0065FC;
     border: 3px solid #0065FC;
     color: white;
-}
-
-.fm-btn-p-family{ /*Text Family*/
-    position: relative;
-    float: left;
-    margin-left:38%;
-}
-
-.fa-child{/*Block Icon Family*/
-    position: absolute;
-    left:27.5%;
-    top:0px;
-    bottom: 0px;
-    float: left;
-    font-size: 18px;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    border-radius: 50px;
-    height: 50px;
-    width: 50px;
-    line-height: 50px !important;
-}
-
-.fm-btn3{ /*Button Romantic*/
-    display: inline-block;
-    margin-right:23px;
-    width: 184px;
-    height: 50px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 50px;
-    border: 3px solid#F2F2F2;
-    background-color:white;
-    outline-style: none;
-}
-
-.fm-btn3:hover{/*rollover btn3 Romantic*/
-    background-color:  #0065FC;
-    border: 3px solid #0065FC;
-    color: white;
-}
-
-.fm-btn-p-romantic{ /*Text Romantic*/
-    position: relative;
-    float: left;
-    margin-top: 0px;
-    margin-left:30%;
-}
-
-.fa-heart{  /*Block Icon Romantic*/
-    position: absolute;
-    left:48%;
-    top:0px;
-    bottom: 0px;
-    float:left;
-    font-size: 18px;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    border-radius: 50px;
-    height: 50px;
-    width: 50px;
-    line-height: 50px !important;
-}
-
-.fm-btn4{ /*Button Animals Allowds*/
-    display: inline-block;
-    width: 242px;
-    height: 50px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 50px;
-    border: 3px solid #F2F2F2;
-    background-color: white;
-    outline-style: none;
-}
-
-.fm-btn4:hover{ /*rollover btn4 Animals Allowds*/
-    background-color:  #0065FC;
-    border: 3px solid #0065FC;
-    color: white;
-}
-
-.fm-btn-p-pets{ /* Text Animals*/
-    position: relative;
-    float: left;
-    margin-top: 0px;
-    margin-left:22%;
-}
-
-.fa-dog{ /*Block Icon Animals*/
-    position: absolute;
-    left: 72%;
-    top:0px;
-    bottom: 0px;
-    float:left;
-    font-size: 18px;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    border-radius: 50px;
-    height: 50px;
-    width: 50px;    
-    line-height: 50px !important;
 }
 
 /*Informations*/
-.info-p{/*Informative P*/
-    margin-left:250px;
+
+.info{
     font-size: 16px;
     padding-top: 10px;
 }
 
-.fa-info{/*Informative Icon*/
+.info i{/*Informative Icon*/
     position:relative;
     top:0%;
     background:white;
@@ -345,441 +226,276 @@ h1{
     text-indent: 10px;
     line-height: 25px !important;
 }
-.info-sp{
+
+.info span{
     margin-left:20px;
 }
 
-/*Accommodations Article*/
+/*MAIN*/
+@media screen and (max-width: 1480px){
+    .flexmain{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+.flexmain{
+    display:flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+    height: 645px;
+    flex-flow: row;
+    align-items: baseline;  
+}
+/*Accommodations and Most popular*/
+
 .fa-star{
     color: #0065FC;
 }
+
 .fa-star.grey{
     color: #F2F2F2;
 }
 
-.photo-title{
+.picturesTitles{
+    font-size:16px;
     font-weight: bold;
 }
 
-.photo-price{
+.picturesPrices{
     font-size:14px;
 }
 
-.accommodationarticle{
+/*Accommodations*/
+.accommodations{ 
     background: #F2F2F2;
-    margin-left: 150px;
-    border-radius: 20px;
-    margin-top:30px;   
+    border-radius: 20px;  
     height: 645px;
-    width: 880px;
-    margin-left:250px;
-    
+    width: 100%;
+    margin:auto;
+    /*flex:100%;*/
 }
 
-.aa-fg{ /*Section figure accommodations*/
+.accommodations_CardsList{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top:40px;
-    height: 460px;
-    width: 880px;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 0;
+    max-height: 645px;
+    margin:auto;
+    padding-top:30px;
+    padding: auto;   
 }
 
-.aa-title{ /*Titre */
+.accommodations h2{
     position: relative;
-    top: 30px;
-    left: 25px;
     font-size: 22px;
+    top: 12px;
+    left: 40px;
 }
 
-.fa-star{
-    color:#0065FC;
-}
-
-.aa-fg-adlc{ /*Figure Auberge de la Cannebiere*/
-    width: 250px;
+.accommodations figure{
+    max-width: 250px;
+    width: 100%;
     height: 200px;
     border-radius: 20px;
     background: white;
-    margin:auto;
+    box-shadow: 0 0 20px #0000002e;
+}
+.accommodations a{
+    text-decoration: none;
+    color:black;
+    margin:0;
 }
 
-.aa-img-adlc{ /*Photo Auberge de la Cannebiere*/
-    width:236px;
+.accommodations img{
+    max-width:236px;
+    width: 100%;
     height: 114px;
     border-radius: 20px 20px 0px 0px;
     margin:7px;
     object-fit: cover;
 }
 
-.aa-fc-adlc{ /*Légende Auberge de la Cannebiere*/
+.accommodations figcaption{
     margin-left:20px;
 }
 
-.aa-fg-hdp{ /*Figure Hotel du Port*/
-    width: 250px;
-    height: 200px;
-    border-radius: 20px;
-    background: white;
-    margin:auto;
-}
-
-.aa-img-hdp{ /*Photo Hotel du Port*/
-    width:236px;
-    height: 114px;
-    border-radius: 20px 20px 0px 0px;
-    margin:7px;
-    object-fit: cover;
-}
-
-.aa-fc-hdp{ /*Légende Hotel du Port*/
-    margin-left: 20px;
-}
-
-.aa-fg-hlm{ /*Figure Hotel les Mouettes*/
-    width: 250px;
-    height: 200px;
-    border-radius: 20px;
-    background: white;
-    margin:auto;
-}
-
-.aa-img-hlm{ /*Photo Hotel les Mouettes*/
-    width:236px;
-    height: 114px;
-    border-radius: 20px 20px 0px 0px;
-    margin:7px;
-    object-fit: cover;
-}
-
-.aa-fc-hlm{ /*Légende Hotel les Mouettes*/
-    margin-left: 20px;
-}
-
-.aa-fg-hdlm{ /*Figure Hotel de la mer*/
-    width: 250px;
-    height: 200px;
-    border-radius: 20px;
-    background: white;
-    margin: auto;
-}
-
-.aa-img-hdlm{ /*Photo Hotel de la mer*/
-    width:236px;
-    height: 114px;
-    border-radius: 20px 20px 0px 0px;
-    margin:7px;
-    object-fit: cover;
-}
-
-.aa-fc-hdlm{ /*Légende Hotel de la mer*/
-    margin-left: 20px;
-}
-
-.aa-fg-alp{ /*Figure Auberge le Panier*/
-    width: 250px;
-    height: 200px;
-    border-radius: 20px;
-    background: white;
-    margin: auto;
-}
-
-.aa-img-alp{ /*Photo Auberge le Panier*/
-    width:236px;
-    height: 114px;
-    border-radius: 20px 20px 0px 0px;
-    margin:7px;
-    object-fit: cover;
-}
-
-.aa-fc-alp{ /*Légende Auberge le Panier*/
-    margin-left:20px;
-}
-
-.aa-fg-hca{ /*Figure Hotel chez Amina*/
-    width: 250px;
-    height: 200px;
-    border-radius: 20px;
-    background: white;
-    margin: auto;
-}
-
-.aa-img-hca{ /*Photo Hotel chez Amina*/
-    width:236px;
-    height: 114px;
-    border-radius: 20px 20px 0px 0px;
-    margin:7px;
-    object-fit: cover;
-}
-
-.aa-fc-hca{ /*Légende Hotel chez Amina*/
-    margin-left:20px;
-}
-
-.aa-more{
+.accommodations p{
     font-size:16px;
     font-weight: bold;
-    margin-left: 25px;
+    margin-left: 40px;
     margin-top: 50px;
+}
+
+.accommodations p a{
+    text-decoration: none;
+    color:black;
 }
 
 /*Most Popular Section*/
-.mp-section{
-    height: 630px;
-    width: 425px;
+
+.mostPopular{
     background:#F2F2F2;
+    height: 645px;
     border-radius: 20px;
-    padding-top:15px;
-    position: absolute;
-    right: 270px;
-    top: 420px;
+    margin-left:2%;
+    width: 40%;
 }
 
-.mp-title{
-    margin-left: 40px;
+.mostPopular_CardsList{      
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mostPopular h2{
+    position: relative;
     font-size: 22px;
-    margin-bottom: 22px;
+    top:12px;
+    left:40px;
 }
 
-.fa-chart-line{
+.mostPopular h2 i{
     position: relative;
     float:right;
-    margin-right: 40px;
+    right: 80px;
 }
 
-.mp-fg-hlsdm{ /*Figure Hotel du soleil du matin*/
+.mostPopular figure{
     height:150px;
-    width: 343px;
+    max-width: 343px;
     background: white;
     border-radius: 20px;
+    box-shadow: 0 0 20px #0000002e;
 }
 
-.mp-img-hlsdm{ /*Photo Hotel du soleil du matin*/
+.mostPopular figcaption{
+    float: right;
+    max-width: 50%;
+    margin-top: 20px;
+
+}
+
+.mostPopular img{
     height:136px;
     width:126px;
     border-radius: 20px 0px 0px 20px;
     margin:7px;
     object-fit: cover;
-}
-
-.mp-fc-hlsdm{ /*Légende Hotel du soleil du matin*/
-    float: right;
-    width: 50%;
-    margin-top: 20px;
-
-}
-
-.mp-fc-hlsdm-fa-star{
-    margin-top: 40px;
-}
-
-.mp-fg-acdl{ /*Figure Au coeur de l'eau*/
-    height:150px;
-    width: 343px;
-    background: white;
-    border-radius: 20px;
-    margin-top: 35px;
-}
-
-.mp-img-acdl{ /*Photo Au coeur de l'eau*/
-    height:136px;
-    width:126px;
-    border-radius: 20px 0px 0px 20px;
-    margin:7px;
-    object-fit: cover;
-}
-
-.mp-fc-acdl{ /*Légende Au coeur de l'eau*/
-    float: right;
-    width: 50%;
-    margin-top: 20px;
-}
-
-.mp-fc-acdl-fa-star{
-    margin-top: 40px;   
-}
-
-.mp-fg-htbb{ /*Figure Au coeur de l'eau*/
-    height:150px;
-    width: 343px;
-    background: white;
-    border-radius: 20px;
-    margin-top: 35px;
-}
-
-.mp-img-htbb{ /*Photo Au coeur de l'eau*/
-    height:136px;
-    width:126px;
-    border-radius: 20px 0px 0px 20px;
-    margin:7px;
-    object-fit: cover;
-}
-
-.mp-fc-htbb{ /*Légende Au coeur de l'eau*/
-    float: right;
-    width: 50%;
-    margin-top: 20px;
-}
-
-.mp-fc-htbb-fa-star{
-    margin-top: 40px;
 }
 
 /*Activities*/
-.a-title{ /*Titre */
-    margin-left: 250px;
+
+.activities h2{
     font-size: 22px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    padding-top:30px;
+}
+.activities{
+    max-height: 600px;     
+    padding:0;
+    margin:0;
+    max-width: 1440px;
 }
 
-.a-photo-title{ /*Legendes images*/
+.activities_CardsList{
+    display: flex; 
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 450px;     
+    padding:0;
+    margin:0;
+    width:105.5%;
+}
+.activities figure{
+    width: 100%;
+    max-width: 300px; 
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #0000002e;
+    margin: 0;
+}
+
+.activities span{
     font-weight: bold;
     margin-left: 20px;
     position: relative;
     bottom: -15px;
 }
 
-.a-fg{ /*figures*/
-    display:flex;
-    flex-flow:column wrap;
-    align-content:space-between;
-    padding: 0;
-    margin-left: 250px;
-    width: 1375px;
+.vieuxPort{
     height: 450px;
 
 }
-
-.a-fg-vp{ /*figure vieux port*/
-    width: 300px;
+.calanques{
     height: 450px;
-    margin: 0;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px #F2F2F2;
 }
-
-.a-img-vp{ /* image Vieux Port*/
-    width: 300px;
-    height: 395px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.a-fg-fp{   /*figure Fort de Pomegues*/
-    width: 300px;
+.pomegues{
     height: 240px;
-    margin: 0;  
-    background: white;
-    border-radius: 20px;
-    box-shadow:  5px 5px 15px #F2F2F2;
+    
 }
 
-.a-img-fp{ /* image Fort de Pomegues*/
-    width: 300px;
-    height: 185px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.a-fg-if{ /*figure îles de Frioul*/
-    width: 300px;
+.frioul{ 
     height: 165px;
-    background: white;
-    margin:0px;
-    border-radius: 20px;
-    box-shadow:  5px 5px 15px #F2F2F2;
-    margin-top: 45px;
 }
 
-.a-img-if{ /*image îles de Frioul*/
-    width: 300px;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.a-fg-pnc{ /*figure Parc National des Calanques*/
-    width: 300px;
-    height: 450px;
-    margin: 0px;
-    background: white;
-    border-radius: 20px;
-    box-shadow:  5px 5px 15px #F2F2F2;
-}
-
-.a-img-pnc{ /* figure Parc National des Calanques*/
-    width: 300px;
-    height: 395px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.a-fg-ndg{ /*figure Notre Dame de la Garde*/
-    width: 300px;
+.notreDame{
     height: 195px;;
-    margin: 0;
-    margin-top:0;
-    background: white;
-    border-radius: 20px;
-    box-shadow:  5px 5px 15px #F2F2F2;
+
 }
 
-.a-img-ndg{ /*image Notre Dame de la Garde*/
-    width: 300px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.a-fg-pl{ /*figure Parc Longchamp*/
-    width: 300px;
+.longchamp{
     height: 210px;
-    margin: 0;
-    margin-bottom: 0;
-    background: white;
-    border-radius: 20px;
-    box-shadow:  5px 5px 15px #F2F2F2;
-    margin-top:45px;
 }
 
-.a-img-pl{ /*image Parc Longchamp*/
-    width: 300px;
-    height: 155px;
+.activities img{
+    width: 100%;
+    max-width: 300px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
+}
+
+.vieuxPort img{
+    height: 395px;    
+}
+
+.pomegues img{
+    height: 185px;
+}
+
+.frioul img{
+    height: 110px;
+
+}
+
+.calanques img{ 
+    height: 395px;
+}
+
+.notreDame img{
+    height: 140px;
+}
+
+.longchamp img{
+    height: 155px;
 }
 
 /*Footer*/
-.ft{ /*Footer*/
+footer{
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
-    height: 200px;
-    left:0px;
-    right:0px;
-    padding-left:250px;
-    padding-right: 250px;
+    max-height: 200px;
+    width: 100%;
     background:#F2F2F2;
     margin-top: 50px;
 }
 
-.s-ap-ul{  /*ul A Propos*/
-    list-style-type: none;
-    padding-left: 0px;
-    line-height: 30px;
+footer ul{
+    list-style-type:none;
+    padding-left:0px;
 }
 
-.s-nh-ul{ /*ul Nos hébergements*/
-    list-style-type: none;
-    padding-left: 0px;
-    line-height: 30px;
-}
-
-.s-a-ul{ /*ul Assistance*/
-    list-style-type: none;
-    padding-left: 0px;
+footer li{
     line-height: 30px;
 }
