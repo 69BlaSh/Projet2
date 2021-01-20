@@ -12,7 +12,7 @@
 
 - Each accommodation or activity card must be clickable in its entirety. For the moment the links will be empty.
 
-- In the menu, the links "Accommodation" and "Activities" are anchors that should lead to the sections of the page.
+- In the menu, the links "Accommodations" and "Activities" are anchors that should lead to the sections of the page.
 
 - The filters will not be functional for this version, however, they must change their appearance on hovering.
 
