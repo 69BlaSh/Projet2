@@ -24,7 +24,7 @@
 
 - The icons comes from Fonte Awesome.
 
-- The colours used are: blue #0065FC; light blue #DEEBFF; grey #F2F2.
+- The colours used are: blue #0065FC; light blue #DEEBFF; grey #F2F2F2.
 
 - All images are also delivered in sm, md, l & xl format.
 
