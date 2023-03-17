@@ -1,4 +1,4 @@
-# PingrisAlexis_02_12122020
+# Reservia
 
 ## Project 2 OpenClassrooms - Transform a mock-up into a website.
 
