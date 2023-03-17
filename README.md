@@ -1,6 +1,6 @@
 # Reservia
 
-## Project 2 OpenClassrooms - Transform a mock-up into a website.
+## Project 1/6 Web Developer Course - Transform a mock-up into a website.
 
 ### Specifications:
 
