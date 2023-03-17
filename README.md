@@ -1,6 +1,6 @@
 # Project 1/6 - Web Developer Path
 
-## Reservia - Transform a mock-up into a website.
+## Transform a mock-up into a website.
 
 ### Specifications:
 
